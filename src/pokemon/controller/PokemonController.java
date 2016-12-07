@@ -16,8 +16,10 @@ public class PokemonController
 	
 	public PokemonController()
 	{
+		pokedex = new ArrayList<Pokemon>();
 		buildPokedex();
 		
+		baseFrame = new PokemonFrame(this);
 	}
 		
 	public void start()

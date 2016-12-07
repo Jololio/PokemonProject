@@ -190,4 +190,54 @@ public class PokemonPanel extends JPanel
 		pokemonLabel.setIcon(pokemonIcon);
 		repaint();
 	}
+
+	private boolean isValidDouble(String input)
+	{
+		boolean isValid = false;
+				
+		try
+		{
+			double successful = Double.parseDouble(input);
+			isValid = true;
+		}
+		catch (NumberFormatException userTypedSomething)
+		{
+			JOptionPane.showMessageDialog(this, "Type in a valid double for speed");
+			speedField.setText("");
+		}
+		return isValid;
+	}
+	
+	private boolean isValidInteger(String input)
+	{
+		boolean isValid = false;
+		
+		try
+		{
+			int successful = Integer.parseInt(input);		
+			isValid = true;		
+		}
+		catch (NumberFormatException userTypedSomething)
+		{
+			JOptionPane.showMessageDialog(this, "Type in an integer");
+			combatField.setText("");
+			healthField.setText("");
+		}
+		return isValid;
+	}
+
+	private boolean isValidName(String name)
+	{
+		boolean isValid = false;
+		if (name != null && name.trim().length() > 2)
+		{
+			isValid = true;
+		}
+		else
+		{
+			JOptionPane.showMessageDialog(this, "Pokemon needs a name with a valid length");
+		}
+		return isValid;
+	}
 }
+
