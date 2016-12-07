@@ -11,15 +11,13 @@ import pokemon.view.PokemonPanel;
 
 public class PokemonController 
 {
-	
-	
+	ArrayList<Pokemon> pokedex = new ArrayList<Pokemon>();
+	PokemonFrame baseFrame = new PokemonFrame(this);
 	
 	public PokemonController()
 	{
-		pokedex = new ArrayList<Pokemon>();
 		buildPokedex();
 		
-		baseFrame = new PokemonFrame(this);
 	}
 		
 	public void start()

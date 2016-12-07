@@ -68,6 +68,8 @@ public class PokemonPanel extends JPanel
 		advancedArea.setEnabled(false);
 		advancedArea.setLineWrap(true);
 		advancedArea.setWrapStyleWord(true);
+		numberField.setEditable(false);
+		numberField.setBackground(Color.GRAY);
 	}
 	
 	private void setupPanel()
@@ -75,12 +77,6 @@ public class PokemonPanel extends JPanel
 		this.setLayout(baseLayout);
 		this.setBackground(Color.LIGHT_GRAY);
 		this.setPreferredSize(new Dimension(900, 600));
-		
-		numberField.setEditable(false);
-		numberField.setBackground(Color.GRAY);
-		advancedArea.setEditable(false);
-		advancedArea.setWrapStyleWord(true);
-		advancedArea.setLineWrap(true);
 		
 		pokemonLabel.setVerticalTextPosition(JLabel.BOTTOM);
 		pokemonLabel.setHorizontalTextPosition(JLabel.CENTER);
