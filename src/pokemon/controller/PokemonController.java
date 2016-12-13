@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import javax.swing.JOptionPane;
 
-import pokemon.model.Pokemon;
+import pokemon.model.*;
 import pokemon.view.PokemonFrame;
 import pokemon.view.PokemonPanel;
 
@@ -31,7 +31,7 @@ public class PokemonController
 	{
 		pokedex.add(new Geodude("derpy"));
 		pokedex.add(new Onix("Pranked"));
-		pokedex.add(new Geodude("Rock n' Roll"));
+		pokedex.add(new GeoDude("Rock n' Roll"));
 		pokedex.add(new Voltorb("Shocking, I know"));
 	}
 	
