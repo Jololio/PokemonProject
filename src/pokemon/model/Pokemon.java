@@ -1,7 +1,12 @@
 package pokemon.model;
 
 
-public class Pokemon 
+public abstract class Pokemon 
 {
+	public Pokemon(String name, int number)
+	{
+		
+	}
 	
+
 }

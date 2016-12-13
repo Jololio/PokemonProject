@@ -1,10 +1,10 @@
 package pokemon.controller;
-
+import pokemon.model.Voltorb;
 import java.util.ArrayList;
-
+import pokemon.model.Onix;
 import javax.swing.JOptionPane;
-
-import pokemon.model.*;
+import pokemon.model.Geodude;
+import pokemon.model.Pokemon;
 import pokemon.view.PokemonFrame;
 import pokemon.view.PokemonPanel;
 
@@ -31,7 +31,7 @@ public class PokemonController
 	{
 		pokedex.add(new Geodude("derpy"));
 		pokedex.add(new Onix("Pranked"));
-		pokedex.add(new GeoDude("Rock n' Roll"));
+		pokedex.add(new Geodude("Rock n' Roll"));
 		pokedex.add(new Voltorb("Shocking, I know"));
 	}
 	
