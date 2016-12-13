@@ -11,4 +11,13 @@ public class Geodude extends Pokemon
 	{
 		super(name, number);
 	}
+	
+	public Geodude(double speed)
+	{
+		super(50);
+	}
+	public Geodude(int healthPoints, int attackPoints)
+	{
+		super(200, 15);
+	}
 }
