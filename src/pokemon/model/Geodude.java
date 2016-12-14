@@ -1,6 +1,6 @@
 package pokemon.model;
 
-public class Geodude extends Pokemon
+public class Geodude extends Pokemon implements Rock
 {
 	public Geodude(String name)
 	{
@@ -19,5 +19,15 @@ public class Geodude extends Pokemon
 	public Geodude(int healthPoints, int attackPoints)
 	{
 		super(200, 15);
+	}
+	
+	public void crush()
+	{
+		
+	}
+	
+	public void avalanche()
+	{
+		
 	}
 }

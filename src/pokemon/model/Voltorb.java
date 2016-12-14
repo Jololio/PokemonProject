@@ -1,6 +1,6 @@
 package pokemon.model;
 
-public class Voltorb extends Pokemon
+public class Voltorb extends Pokemon implements Electric
 {
 	public Voltorb(String name)
 	{
@@ -19,6 +19,16 @@ public class Voltorb extends Pokemon
 	public Voltorb(int healthPoints, int attackPoints)
 	{
 		super(150, 25);
+	}
+	
+	public void shock()
+	{
+		
+	}
+	
+	public void electricute()
+	{
+		
 	}
 
 }

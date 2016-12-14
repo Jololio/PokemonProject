@@ -3,6 +3,9 @@ package pokemon.model;
 
 public abstract class Pokemon 
 {
+	private int number;
+	private String information;
+	private String pokeType;
 	private String name;
 	private double attackPoints;
 	private double speed;
@@ -20,31 +23,31 @@ public abstract class Pokemon
 	{
 		
 	}
-	public String getName(String name) 
+	public String getName() 
 	{
 		return name;
 	}
-	public int getNumber(int number) 
+	public int getNumber() 
 	{
 		return number;
 	}
-	public double getAttackPoints(double attackPoints) 
+	public double getAttackPoints() 
 	{
 		return attackPoints;
 	}
-	public double getSpeed(double speed) 
+	public double getSpeed() 
 	{
 		return speed;
 	}
-	public double getHealthPoints(double healthPoints) 
+	public double getHealthPoints() 
 	{
 		return healthPoints;
 	}
-	public String getPokemonInformation(String information) 
+	public String getPokemonInformation() 
 	{
 		return information;
 	}
-	public String getPokemonTypes(String pokeType) 
+	public String getPokemonTypes() 
 	{
 		return pokeType;
 	}

@@ -1,6 +1,6 @@
 package pokemon.model;
 
-public class Onix extends Pokemon 
+public class Onix extends Pokemon implements Rock, Ground
 {
 	public Onix(String name)
 	{
@@ -20,4 +20,22 @@ public class Onix extends Pokemon
 	{
 		super(250, 20);
 	}
+	
+	public void crush()
+	{
+		
+	}
+	public void avalanche()
+	{
+		
+	}
+	public void punch()
+	{
+		
+	}
+	public void lunge()
+	{
+		
+	}
 }
+
