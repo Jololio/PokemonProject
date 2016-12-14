@@ -34,5 +34,15 @@ public class PokemonController
 		pokedex.add(new Geodude("Rock n' Roll"));
 		pokedex.add(new Voltorb("Shocking, I know"));
 	}
-	
+
+	public ArrayList<Pokemon> getPokedex() 
+	{
+		return pokedex;
+	}
+
+	public PokemonFrame getBaseFrame() 
+	{
+		return baseFrame;
+	}
+
 }
