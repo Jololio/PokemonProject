@@ -48,7 +48,7 @@ public abstract class Pokemon
 		String information = "This pokemon is of type: " + this.getClass().getSimpleName();
 		return information;
 	}
-	public String getPokemonTypes() 
+	public String[] getPokemonTypes() 
 	{
 		String pokemonTypes = "This Pokemon has the following type(s);";
 		Class<?> [] types = getClass().getInterfaces();
