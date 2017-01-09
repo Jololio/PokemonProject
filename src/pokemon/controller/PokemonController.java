@@ -33,6 +33,8 @@ public class PokemonController
 		pokedex.add(new Onix("Pranked"));
 		pokedex.add(new Geodude("Rock n' Roll"));
 		pokedex.add(new Voltorb("Shocking, I know"));
+		pokedex.add(new Voltorb("Electricute and Exicute"));
+		pokedex.add(new Onix("Yeah, I know I rock"));
 	}
 
 	public ArrayList<Pokemon> getPokedex() 
