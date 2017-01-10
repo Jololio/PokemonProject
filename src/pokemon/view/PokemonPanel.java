@@ -32,6 +32,7 @@ public class PokemonPanel extends JPanel
 	private JTextField numberField;
 	
 	
+	//Initializes all components of the window
 	public PokemonPanel(PokemonController baseController)
 	{
 		super();
@@ -62,6 +63,7 @@ public class PokemonPanel extends JPanel
 		setupListeners();
 	}
 	
+	//Sets up display properties
 	private void setupPokemonDisplay()
 	{
 		advancedArea.setEditable(false);
@@ -72,6 +74,7 @@ public class PokemonPanel extends JPanel
 		numberField.setBackground(Color.GRAY);
 	}
 	
+	//Adds the window components
 	private void setupPanel()
 	{
 		this.setLayout(baseLayout);
@@ -98,6 +101,7 @@ public class PokemonPanel extends JPanel
 		this.add(pokedexSelector);
 	}
 	
+	//Auto-generated code dump from window builder
 	private void setupLayout()
 	{
 		baseLayout.putConstraint(SpringLayout.WEST, advancedArea, -198, SpringLayout.EAST, this);
@@ -114,6 +118,7 @@ public class PokemonPanel extends JPanel
 		baseLayout.putConstraint(SpringLayout.EAST, combatField, 0, SpringLayout.EAST, advancedArea);
 	}
 	
+	//Sets up Actions and Links them
 	private void setupListeners()
 	{
 		pokedexSelector.addActionListener(new ActionListener()
@@ -148,6 +153,7 @@ public class PokemonPanel extends JPanel
 		});
 	}
 	
+	//Will change the screen color based on the Pokemon's type
 	private void changeColorBasedOnData(String data)
 	{
 		if (data.contains("Electric"))
@@ -174,6 +180,7 @@ public class PokemonPanel extends JPanel
 		repaint();
 	}
 	
+	//Will change the image depending on Pokemon
 	private void changeImageDisplay(String name)
 	{
 		String path = "/poke/view/images/";
@@ -191,6 +198,7 @@ public class PokemonPanel extends JPanel
 		repaint();
 	}
 
+	//Checks to see if input is a valid Double
 	private boolean isValidDouble(String input)
 	{
 		boolean isValid = false;
@@ -208,6 +216,7 @@ public class PokemonPanel extends JPanel
 		return isValid;
 	}
 	
+	//Same as isValidDouble but for an int
 	private boolean isValidInteger(String input)
 	{
 		boolean isValid = false;
@@ -226,6 +235,7 @@ public class PokemonPanel extends JPanel
 		return isValid;
 	}
 
+	//Same as isValidDouble but for a String
 	private boolean isValidName(String name)
 	{
 		boolean isValid = false;

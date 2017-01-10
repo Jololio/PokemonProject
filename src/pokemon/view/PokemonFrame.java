@@ -5,11 +5,13 @@ import pokemon.controller.PokemonController;
 import java.awt.Dimension;
 
 
+//Frame for the window
 public class PokemonFrame extends JFrame
 	{
 		private PokemonController baseController;
 		private PokemonPanel basePanel;
 		
+		//Sets up the frame
 		public PokemonFrame(PokemonController baseController)
 		{
 			super();
@@ -19,6 +21,7 @@ public class PokemonFrame extends JFrame
 			setupFrame();
 		}
 		
+		//Frame properties
 		private void setupFrame()
 		{
 			this.setContentPane(basePanel);
