@@ -39,12 +39,12 @@ public class PokemonPanel extends JPanel
 		this.baseController = baseController;
 		baseLayout = new SpringLayout();
 		advancedArea = new JTextArea();
-		this.pokemonIcon = new ImageIcon(getClass().getResource("/poke/view/"));
+		this.pokemonIcon = new ImageIcon(getClass().getResource("/pokemon/view/images/Pokeball.png"));
 		healthField = new JTextField();
 		updateButton = new JButton();
-		pokemonIcon = new ImageIcon();
+		//pokemonIcon = new ImageIcon();
 		pokedexSelector = new JComboBox();
-		pokemonLabel = new JLabel();
+		pokemonLabel = new JLabel("", pokemonIcon, JLabel.CENTER);
 		healthLabel = new JLabel();
 		combatLabel = new JLabel();
 		speedLabel = new JLabel();

@@ -11,8 +11,8 @@ import pokemon.view.PokemonPanel;
 
 public class PokemonController 
 {
-	ArrayList<Pokemon> pokedex = new ArrayList<Pokemon>();
-	PokemonFrame baseFrame = new PokemonFrame(this);
+	ArrayList<Pokemon> pokedex ;
+	PokemonFrame baseFrame; 
 	
 	/*Initializes and builds pokedex array list
 	 * initializes PokemonFrame as well

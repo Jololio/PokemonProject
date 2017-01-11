@@ -58,7 +58,7 @@ public abstract class Pokemon
 		return information;
 	}
 	//Returns poketype
-	public String[] getPokemonTypes() 
+	public String getPokemonTypes() 
 	{
 		String pokemonTypes = "This Pokemon has the following type(s);";
 		Class<?> [] types = getClass().getInterfaces();
@@ -75,7 +75,7 @@ public abstract class Pokemon
 			String temp = current.replace(this.getClass().getPackage().getName() + ".", "");
 			pokemonTypes += temp + "\n";
 		}
-		return pokeTypes;
+		return pokemonTypes;
 	}
 	//Will change pokemon's name
 	public void setName(String name)
