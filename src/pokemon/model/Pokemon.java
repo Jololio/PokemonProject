@@ -14,7 +14,8 @@ public abstract class Pokemon
 	//Name
 	public Pokemon(String name, int number)
 	{
-		
+		this.name = name;
+		this.number = number;
 	}
 	//Speed
 	public Pokemon(double speed)

@@ -14,7 +14,7 @@ import pokemon.view.PokemonPanel;
 
 public class PokemonController 
 {
-	ArrayList<Pokemon> pokedex ;
+	ArrayList<Pokemon> pokedex;
 	PokemonFrame baseFrame; 
 	
 	/*Initializes and builds pokedex array list
@@ -47,6 +47,16 @@ public class PokemonController
 		pokedex.add(new Electrode("Zap!"));
 	}
 
+	//Will update the selected pokemon's property
+	public void updateSelected(int index, String name, int attackPoints, int healthPoints, double speed)
+	{
+		Pokemon current = pokedex.get(index);
+		current.setAttackPoints(attackPoints);
+		current.setHealthPoints(healthPoints);
+		current.setName(name);
+		current.setSpeed(speed);
+	}
+	
 	//Will return the Pokedex
 	public ArrayList<Pokemon> getPokedex() 
 	{
