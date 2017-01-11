@@ -3,8 +3,11 @@ import pokemon.model.Voltorb;
 import java.util.ArrayList;
 import pokemon.model.Onix;
 import javax.swing.JOptionPane;
+
+import pokemon.model.Electrode;
 import pokemon.model.Geodude;
 import pokemon.model.Pokemon;
+import pokemon.model.Sandslash;
 import pokemon.view.PokemonFrame;
 import pokemon.view.PokemonPanel;
 
@@ -40,6 +43,8 @@ public class PokemonController
 		pokedex.add(new Voltorb("Shocking, I know"));
 		pokedex.add(new Voltorb("Electricute and Exicute"));
 		pokedex.add(new Onix("Yeah, I know I rock"));
+		pokedex.add(new Sandslash("I love the beach, cause of the sand."));
+		pokedex.add(new Electrode("Zap!"));
 	}
 
 	//Will return the Pokedex
