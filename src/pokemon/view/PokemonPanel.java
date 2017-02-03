@@ -181,6 +181,7 @@ public class PokemonPanel extends JPanel
 	}
 	
 	//Will change the image depending on Pokemon
+	 
 	private void changeImageDisplay(String name)
 	{
 		String path = "/poke/view/images/";
@@ -197,7 +198,7 @@ public class PokemonPanel extends JPanel
 		pokemonLabel.setIcon(pokemonIcon);
 		repaint();
 	}
-
+	//Looks good and its very useful for lots of things.
 	//Checks to see if input is a valid Double
 	private boolean isValidDouble(String input)
 	{
